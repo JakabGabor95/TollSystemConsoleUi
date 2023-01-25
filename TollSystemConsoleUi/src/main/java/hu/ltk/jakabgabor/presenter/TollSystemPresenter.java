@@ -24,6 +24,7 @@ public class TollSystemPresenter implements MotorwayVignetteResponseInterface {
        motorwayVignetteValidator.validateByMotorwayVignette(motorwayVignetteJson);
         MotorwayVignettesAndVehicleModel motorwayVignettesAndVehicleModel =
                 gson.fromJson(motorwayVignetteJson, MotorwayVignettesAndVehicleModel.class);
+
         tollSystemView.display(motorwayVignettesAndVehicleModel);
     }
 }
