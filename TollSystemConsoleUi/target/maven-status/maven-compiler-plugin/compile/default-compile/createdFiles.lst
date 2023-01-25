@@ -1,0 +1,7 @@
+hu/ltk/jakabgabor/models/MotorwayVignetteModel.class
+hu/ltk/jakabgabor/models/MotorwayVignettesAndVehicleModel.class
+hu/ltk/jakabgabor/parser/RegistrationNumberParser.class
+hu/ltk/jakabgabor/models/VehicleModel.class
+hu/ltk/jakabgabor/view/TollSystemView.class
+hu/ltk/jakabgabor/presenter/TollSystemPresenter.class
+hu/ltk/jakabgabor/controller/TollSystemController.class
