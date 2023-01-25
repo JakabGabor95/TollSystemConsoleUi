@@ -5,8 +5,6 @@ import hu.ltk.jakabgabor.controller.TollSystemController;
 import hu.ltk.jakabgabor.models.MotorwayVignettesAndVehicleModel;
 import hu.ltk.jakabgabor.models.VehicleModel;
 
-import java.time.LocalDate;
-import java.time.Month;
 import java.util.Date;
 import java.util.Scanner;
 
@@ -45,9 +43,10 @@ public class TollSystemView {
     }
     public void display(MotorwayVignettesAndVehicleModel motorwayVignettesAndVehicleModel) {
         Date today = new Date();
+        System.out.println(" " + "  érvényesség kezdete      " + "érvényesség vége              " + "kategória          " + "vásárlás dátuma");
         for (MotorwayVignette motorwayVignette : motorwayVignettesAndVehicleModel.getMotorwayVignetteList()) {
             String motorwayVignetteValues = "";
-            motorwayVignetteValues += today.compareTo(motorwayVignette.getValidTo()) > 0 ? "X " : " ";
+            motorwayVignetteValues += today.compareTo(motorwayVignette.getValidTo()) > 0 ? "  " : "X ";
             motorwayVignetteValues += motorwayVignette.getValidFrom() + " ";
             motorwayVignetteValues += motorwayVignette.getValidTo() + " ";
             motorwayVignetteValues += motorwayVignette.getMotorwayVignetteType() + " ";

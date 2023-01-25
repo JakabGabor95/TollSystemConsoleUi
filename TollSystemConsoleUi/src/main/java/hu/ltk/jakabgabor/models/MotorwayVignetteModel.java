@@ -1,7 +1,5 @@
 package hu.ltk.jakabgabor.models;
 
-import java.time.LocalDate;
-import java.util.Date;
 
 public class MotorwayVignetteModel {
     String registrationNumber;
